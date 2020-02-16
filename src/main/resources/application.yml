@@ -1,0 +1,20 @@
+server:
+  servlet:
+    context-path: /workshop
+logging:
+  level:
+    com.dyndyn: INFO
+    com.springframework: INFO
+    root: ERROR
+management:
+  endpoint:
+    health:
+      enabled: true
+      show-details: always
+    prometheus:
+      enabled: true
+  endpoints:
+    web:
+      base-path: /
+      exposure:
+        include: prometheus,health
