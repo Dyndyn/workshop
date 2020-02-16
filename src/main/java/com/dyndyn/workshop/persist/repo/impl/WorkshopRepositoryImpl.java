@@ -1,6 +1,6 @@
 package com.dyndyn.workshop.persist.repo.impl;
 
-import com.dyndyn.workshop.ValidationException;
+import com.dyndyn.workshop.exception.ValidationException;
 import com.dyndyn.workshop.persist.model.Workshop;
 import com.dyndyn.workshop.persist.repo.WorkshopRepository;
 import org.springframework.stereotype.Component;
