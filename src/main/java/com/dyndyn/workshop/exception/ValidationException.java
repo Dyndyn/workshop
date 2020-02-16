@@ -1,4 +1,4 @@
-package com.dyndyn.workshop;
+package com.dyndyn.workshop.exception;
 
 public class ValidationException extends RuntimeException {
     public ValidationException(String message) {
