@@ -34,6 +34,11 @@ public class WorkshopRepositoryImpl implements WorkshopRepository {
     }
 
     @Override
+    public Optional<Workshop> findByCompanyName(String companyName) {
+        return workshops.values().stream().filter(workshop -> companyName.equals(workshop.getCompanyName())).findAny();
+    }
+
+    @Override
     public Collection<Workshop> findAll() {
         return workshops.values();
     }

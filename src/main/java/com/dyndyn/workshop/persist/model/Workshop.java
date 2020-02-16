@@ -8,7 +8,7 @@ import java.util.List;
 public class Workshop {
     private Integer id;
     private String companyName;
-    private List<String> specialties;
+    private List<String> trademarks;
     private String city;
     private String postalCode;
     private String country;

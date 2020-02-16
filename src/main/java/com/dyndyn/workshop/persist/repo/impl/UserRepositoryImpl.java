@@ -27,6 +27,11 @@ public class UserRepositoryImpl implements UserRepository {
     }
 
     @Override
+    public Optional<User> findByUsername(String username) {
+        return users.values().stream().filter(user -> username.equals(user.getUsername())).findAny();
+    }
+
+    @Override
     public Collection<User> findAll() {
         return users.values();
     }
