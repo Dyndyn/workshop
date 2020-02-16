@@ -10,6 +10,7 @@ public interface WorkshopRepository {
 
     Optional<Workshop> findById(Integer id);
     List<Workshop> findByCity(String city);
+    Optional<Workshop> findByCompanyName(String companyName);
     Collection<Workshop> findAll();
     Workshop create(Workshop workshop);
     Workshop delete(Integer id);
